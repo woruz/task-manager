@@ -1,0 +1,110 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.create-task-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    padding-right: 2rem;
+}
+
+.username {
+    margin-right: 1rem;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0.5rem;
+    }
+
+    .create-task-btn {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    background-color: #ff4d4d;
+    /* Red button color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn:hover {
+    background-color: #e63939;
+    /* Darker red on hover */
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+}
+
+.username {
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
