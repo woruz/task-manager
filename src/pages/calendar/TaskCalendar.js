@@ -48,7 +48,6 @@ const TaskCalendar = ({ events, setEvents, onSubmit }) => {
   };
 
   const onSelectEvent = (event) => {
-    console.log({event2: event})
     setSelectedEvent(event);
     setIsModalOpen(true);
   };
@@ -59,7 +58,6 @@ const TaskCalendar = ({ events, setEvents, onSubmit }) => {
   };
 
   const handleUpdateEvent = (updatedEvent) => {
-    console.log({updatedEvent})
     let updated_obj = {
       start_date: updatedEvent.start,
       end_date: updatedEvent.end,

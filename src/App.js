@@ -17,14 +17,14 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
 
-  const { loading, error, create_contact, data, update_task } = useCalendar();
+  const { create_contact, data, update_task } = useCalendar();
   const {login} = useAuth()
   
 
   useEffect(() => {
     setEvents([]);
     if (data && data.length) {
-      data.map((val) => {
+      data.forEach((val) => {
         const {
           _id,
           start_date,

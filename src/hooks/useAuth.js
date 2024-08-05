@@ -10,7 +10,6 @@ const useAuth = () => {
   const login = async (body,setIsLoggedIn,setUsername) => {
     setLoading(true);
     setError(null);
-    console.log(body);
     const { email, password } = body;
     fetch(`${url}/login`, {
       method: "POST",
